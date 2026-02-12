@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSS Volleyball Academy | Elite Training</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary: #ff6600; /* Athletic Orange */
+            --secondary: #1a1a1a; /* Charcoal Black */
+            --text-light: #f4f4f4;
+            --accent: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--secondary);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 700px;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #e65c00;
+            transform: scale(1.05);
+        }
+
+        /* Programs Section */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DSS ACADEMY</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#programs">Programs</a>
+            <a href="#coaches">Coaches</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>DEFEND THE COURT</h1>
+        <p>High-performance training for the next generation of volleyball athletes. Specialized in defensive mastery and explosive agility.</p>
+        <a href="#programs" class="btn">VIEW OUR PROGRAMS</a>
+    </section>
+
+    <div class="container" id="programs">
+        <h2 class="section-title">Training Tracks</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>The DS Masterclass</h3>
+                <p>Focused exclusively on serve receive, floor defense, and the "relentless pursuit" mindset. Ideal for Libero and DS specialists.</p>
+            </div>
+            <div class="card">
+                <h3>All-Around Academy</h3>
+                <p>Complete skill development including hitting, setting, and blocking. Build a well-rounded 6-rotation game.</p>
+            </div>
+            <div class="card">
+                <h3>Youth Development</h3>
+                <p>Ages 8-12. Building motor skills, hand-eye coordination, and a fundamental passion for the game.</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="container" id="contact">
+        <h2 class="section-title">Join the Academy</h2>
+        <p style="text-align: center;">Ready to level up your game? Our spring tryouts begin March 1st.</p>
+        <div style="text-align: center;">
+            <a href="mailto:info@dssvolleyball.com" class="btn">Register Today</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DSS Volleyball Academy. All rights reserved.</p>
+        <p>Delta, BC | North Delta Sports Complex</p>
+    </footer>
+
+</body>
+</html>
